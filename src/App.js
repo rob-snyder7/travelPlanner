@@ -23,6 +23,8 @@ class App extends Component {
     this.setState({country: 'none'})
   }
 
+  
+
   render() {
 
     const displayPage = [<WorldMap onRouteChange={this.onRouteChange}/>, <InfoPage onBack={this.onBack} country={this.state.country}/>]

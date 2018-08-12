@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "google-map-react": "^1.0.6",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.2",
+    "react-perfect-scrollbar": "^1.2.0",
     "react-scripts": "1.1.4",
     "react-simple-maps": "^0.12.1"
   },
@@ -15,5 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "tachyons": "^4.10.0"
   }
 }

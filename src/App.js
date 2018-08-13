@@ -15,7 +15,6 @@ class App extends Component {
   onRouteChange = (event) => {
     this.setState({route: 1})
     this.setState({country: event.properties.NAME})
-    console.log(event.properties.NAME)
   }
 
   onBack = () => {

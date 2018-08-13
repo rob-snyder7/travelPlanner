@@ -1,9 +1,8 @@
 import React from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
-import { countryAttractions, countryAttractionsImages, countryCities, countryCitiesImages } from './Data';
+import { countryAttractions, countryAttractionsImages, countryCities, countryCitiesImages } from './Utils/Data';
 import ScrollBar from 'react-perfect-scrollbar';
-import './InfoPage.css';
 import GoogleMap from './GoogleMap';
+import TravelCosts from './TravelCosts';
 
 
 
@@ -28,37 +27,34 @@ const InfoPage = ({country, onBack}) => {
 	return (
 
 		<div className='vh-100'>
-	
-			{country}
-				<div className="container">
-					<div className="row">
-						<div className="col-sm-4 vh-75">
-						top attractions
-						<ScrollBar>
-							{attractions}
-						</ScrollBar>
-						</div>
-						
-						
-						<div className="col-sm-4 vh-75">
-						top cities
-						<ScrollBar>
-							{cities}
-						</ScrollBar>		
-						</div>
-						<div className="col-sm-4">
-						<GoogleMap />
-						</div>
-					</div>
-					<div className="row">
-						<div className="col-sm-4 col-xs-offset-8">
-						top cities
+			<div style={{ height: '95vh'}}>
+				{country}
+					<div className="container">
+						<div className="row">
+							<div className="col-sm-4" style={{ height: '90vh'}}>
+							top attractions
+							<ScrollBar>
+								{attractions}
+							</ScrollBar>
+							</div>
+							
+							
+							<div className="col-sm-4" style={{ height: '90vh'}}>
+							top cities
+							<ScrollBar>
+								{cities}
+							</ScrollBar>		
+							</div>
+							<div className="col-sm-4 pt4">
+								<GoogleMap country={country}/>
+								<TravelCosts country={country}/>
+							</div>
 						</div>
 					</div>
+			</div>
+				<div className='pt3'>
+					<button onClick={onBack}>Back</button>
 				</div>
-
-			<button onClick={onBack}>Back</button>
-			
 		</div>
 	)
 }

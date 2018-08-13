@@ -1,35 +1,35 @@
 import React, {Component} from 'react';
 import GoogleMapReact from 'google-map-react';
+import { countryCoordinates } from './Utils/Data';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
 class GoogleMap extends Component {
-  static defaultProps = {
-    center: {
-      lat: 59.95,
-      lng: 30.33
-    },
-    zoom: 11
-  };
- 
-  render() {
-    return (
-      // Important! Always set the container height explicitly
-      <div style={{ height: '100vh', width: '100%' }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyCkNvM32n5Xu-xZUwdtniP1Mq2a4JvzvOQ' }}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
-            text={'Kreyser Avrora'}
-          />
-        </GoogleMapReact>
-      </div>
-    );
-  }
+	constructor(props) {
+		super(props)
+		this.state = {
+			center: {
+				lat: countryCoordinates[this.props.country][0],
+				lng: countryCoordinates[this.props.country][1]
+			}
+		}
+	}
+
+
+
+	render() {
+	    return (
+	      // Important! Always set the container height explicitly
+	      <div style={{ height: '40vh', width: '100%' }}>
+	      {console.log(countryCoordinates[this.props.country][0])}
+	        <GoogleMapReact
+	          bootstrapURLKeys={{ key: 'AIzaSyCkNvM32n5Xu-xZUwdtniP1Mq2a4JvzvOQ' }}
+	          defaultCenter={this.state.center}
+	          defaultZoom={5}
+	        >
+	        </GoogleMapReact>
+	      </div>
+	    );
+	}
 }
  
 export default GoogleMap;

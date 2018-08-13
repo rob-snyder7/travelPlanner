@@ -1,0 +1,2 @@
+Add currency denomination - add it to data file as last element for each country
+Add total cost to data files also

@@ -5,7 +5,7 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
-import {data} from './Utils/maptest';
+import {data} from '../Utils/maptest';
 
 const mapStyles = {
 	  width: "90%",
@@ -21,11 +21,12 @@ class WorldMap extends Component {
 	render() {
 		return (
 			<div >
-				<div className='f1-ns'style={{height: '17vh'}}>
-					Travel Planner
+				<div className=''style={{height: '18vh'}}>
+					<p className="black b f1 f-headline-ns tc db mb3 mb4-ns" title="Home">Travel Planner</p>
+					<p className='black f2'>select dream destination below</p>
 				</div>
-				<ComposableMap style={{width: '100%', height: '70vh'}}>
-				  <ZoomableGroup >
+				<ComposableMap className='ba' style={{width: '90%', height: '70vh'}}>
+				  <ZoomableGroup>
 				    <Geographies  geography={ data }>
 				      {(geographies, projection) => geographies.map(geography => (
 				        <Geography 
@@ -33,8 +34,7 @@ class WorldMap extends Component {
 				        	geography={ geography } 
 				        	projection={ projection } 
 				        	style={{
-			                    default: {
-			                    	width: '100%',
+			                    default: {			   
 			                      fill: "#ECEFF1",
 			                      stroke: "#607D8B",
 			                      strokeWidth: 0.75,

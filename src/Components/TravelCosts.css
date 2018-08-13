@@ -1,0 +1,20 @@
+.costName {
+	height: 3.5vh;
+	background-color: #FFE48E;
+	font-weight: 600;
+	text-align: left;
+	padding-top: .5vh;
+	font-size: 1.5rem;
+}
+
+.costValue {
+	height: 2.5vh;
+	background-color: #FFE48E;
+	font-weight: 550;
+	margin-bottom: 2.5vh;
+	text-align: right;
+}
+
+.costTitle {
+	padding-bottom: 3.7vh;
+}

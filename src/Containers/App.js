@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import WorldMap from './WorldMap';
+import WorldMap from '../Components/WorldMap';
 import InfoPage from './InfoPage';
 
 class App extends Component {

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Gochi Hand', cursive;
 }
 
 
@@ -10,5 +11,9 @@
 
 .App-intro {
   font-size: large;
+}
+
+.titles {
+	font-size: 3.5rem;
 }
 

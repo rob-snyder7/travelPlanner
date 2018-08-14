@@ -13,8 +13,12 @@ class App extends Component {
   }
 
   onRouteChange = (event) => {
-    this.setState({route: 1})
-    this.setState({country: event.properties.NAME})
+    if (event.properties.NAME === 'Russia'){
+      console.log('nope')
+    } else {
+      this.setState({route: 1})
+      this.setState({country: event.properties.NAME})
+    }
   }
 
   onBack = () => {

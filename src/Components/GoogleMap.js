@@ -20,7 +20,7 @@ class GoogleMap extends Component {
 	    return (
 	      // Important! Always set the container height explicitly
 	      <div style={{ height: '37vh', width: '100%' }}>
-	      {console.log(countryCoordinates[this.props.country][0])}
+
 	        <GoogleMapReact
 	          bootstrapURLKeys={{ key: 'AIzaSyCkNvM32n5Xu-xZUwdtniP1Mq2a4JvzvOQ' }}
 	          defaultCenter={this.state.center}

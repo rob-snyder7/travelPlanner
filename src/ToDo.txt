@@ -9,7 +9,9 @@ handle country not having data
 
 show country name on homepage when hovering
 
+remove one of the bootstrap packages
 
+alter the zoom based on country size
 
 ### Notes ###
 myanmar, singapore no cities

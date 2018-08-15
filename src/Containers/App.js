@@ -27,7 +27,6 @@ class App extends Component {
     this.setState({country: 'none'})
   }
 
-  
 
   render() {
 

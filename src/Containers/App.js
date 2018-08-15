@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import WorldMap from '../Components/WorldMap';
 import InfoPage from './InfoPage';
+import { AvailableCountries } from '../Utils/Data';
 
 class App extends Component {
   constructor() {
@@ -13,11 +14,11 @@ class App extends Component {
   }
 
   onRouteChange = (event) => {
-    if (event.properties.NAME === 'Russia'){
-      console.log('nope')
-    } else {
+    if (AvailableCountries.includes(event.properties.NAME)){
       this.setState({route: 1})
       this.setState({country: event.properties.NAME})
+    } else {
+      console.log('nope')
     }
   }
 

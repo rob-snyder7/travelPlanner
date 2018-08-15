@@ -1,10 +1,10 @@
 import React from 'react';
-import {countryCosts} from '../Utils/Data';
+import { costData } from '../Utils/Data';
 import './TravelCosts.css';
 
 const TravelCosts = ({country}) => {
 
-	if (countryCosts.hasOwnProperty(country)) {
+	if (costData.hasOwnProperty(country)) {
 		return (
 			<div className='' style={{ height: '45.2vh'}}>
 				<div className='row'>
@@ -20,15 +20,15 @@ const TravelCosts = ({country}) => {
 				</div>
 				<div className='row'>
 					<div className='costValue col-xs-4 col-xs-offset-1'>
-						{countryCosts[country][0]}
+						{costData[country][9] + costData[country][0]}
 					</div>
 					<div className='costValue col-xs-4 col-xs-offset-2'>
-						{countryCosts[country][1]}
+						{costData[country][9] + costData[country][1]}
 					</div>
 				</div>
 				<div className='row'>
 					<div className='costName col-xs-4 col-xs-offset-1'>
-						Water
+						Alcohol
 					</div>
 					<div className='costName col-xs-4 col-xs-offset-2'>
 						Transportation
@@ -36,10 +36,10 @@ const TravelCosts = ({country}) => {
 				</div>
 				<div className='row'>
 					<div className='costValue col-xs-4 col-xs-offset-1'>
-						{countryCosts[country][4]}
+						{costData[country][9] + costData[country][8]}
 					</div>
 					<div className='costValue col-xs-4 col-xs-offset-2'>
-						{countryCosts[country][3]}
+						{costData[country][9] + costData[country][3]}
 					</div>
 				</div>
 				<div className='row'>
@@ -47,31 +47,15 @@ const TravelCosts = ({country}) => {
 						Entertainment
 					</div>
 					<div className='costName col-xs-4 col-xs-offset-2'>
-						Alcohol
-					</div>
-				</div>
-				<div className='row'>
-					<div className='costValue col-xs-4 col-xs-offset-1'>
-						{countryCosts[country][5]}
-					</div>
-					<div className='costValue col-xs-4 col-xs-offset-2'>
-						{countryCosts[country][8] + countryCosts[country][4]}
-					</div>
-				</div>
-				<div className='row'>
-					<div className='costName col-xs-4 col-xs-offset-1'>
 						Total
 					</div>
-					<div className='costName col-xs-4 col-xs-offset-2'>
-						Priciness (1 - 10)
-					</div>
 				</div>
 				<div className='row'>
 					<div className='costValue col-xs-4 col-xs-offset-1'>
-						{countryCosts[country][8] + countryCosts[country][4]}
+						{costData[country][9] + costData[country][4]}
 					</div>
 					<div className='costValue col-xs-4 col-xs-offset-2'>
-						123
+						{costData[country][9] + costData[country][10]}
 					</div>
 				</div>
 			</div>

@@ -5,7 +5,7 @@ import {
   Geographies,
   Geography
 } from "react-simple-maps";
-import {data} from '../Utils/maptest';
+import { WorldMapData } from '../Utils/Data';
 
 const mapStyles = {
 	  width: "90%",
@@ -27,7 +27,7 @@ class WorldMap extends Component {
 				</div>
 				<ComposableMap className='ba' style={{width: '90%', height: '70vh'}}>
 				  <ZoomableGroup>
-				    <Geographies  geography={ data }>
+				    <Geographies  geography={ WorldMapData }>
 				      {(geographies, projection) => geographies.map(geography => (
 				        <Geography 
 				        	key={ geography.id } 

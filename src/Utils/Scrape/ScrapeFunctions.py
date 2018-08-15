@@ -25,3 +25,23 @@ def is_good_response(resp):
 
 def log_error(e):
     print(e)
+
+
+def pullImages(country, html):
+    dataDict[country] = []
+    for span in html.select('img.lazy'):
+        dataDict[country].append(span.get('data-lazy-src'))
+    dataDict[country].reverse()
+
+def pullAttractions(country, html):
+    dataDict[country] = []
+    for span in html.select('span.toptitle'):
+        span = span.text
+        if 'Where to Stay' in span:
+            cutIndex = span.index(' (Where')
+            span = span[:cutIndex]
+        if 'Plan your Visit' in span:
+            cutIndex = span.index(' (Plan')
+            span = span[:cutIndex]
+        dataDict[country].append(span)
+    dataDict[country].reverse() 

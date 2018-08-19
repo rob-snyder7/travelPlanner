@@ -8,7 +8,7 @@ class WorldMap extends Component {
 	render() {
 		return (
 			<div >
-				<div className=''style={{height: '18vh'}}>
+				<div className='' style={{height: '18vh'}}>
 					<p className="black b f1 f-headline-ns tc db mb3 mb4-ns" title="Home">Travel Planner</p>
 					<p className='black f2'>select dream destination below</p>
 				</div>

@@ -1,11 +1,3 @@
-Add currency denomination - add it to data file as last element for each country
-Add total cost to data files also
-Add costliness index, sort based on average daily cost and rank(top 10% are 1.xxx, bottom 10% are 9.xxxx)
-for daily costs restore water and then on bottom add total and cost index
-
-add other regions
-handle country not having data
-
 
 show country name on homepage when hovering
 

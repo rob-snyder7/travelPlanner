@@ -6,11 +6,6 @@ import ReactTooltip from 'react-tooltip';
 
 class WorldMap extends Component {
 
-	handleMove(event) {
-		console.log(event.properties.NAME)
-	}
-
-
 	render() {
 		return (
 			<div >
@@ -22,13 +17,12 @@ class WorldMap extends Component {
 				<ComposableMap className='ba' style={{width: '90%', height: 'auto', maxHeight: '70vh'}}>
 				  <ZoomableGroup>
 				    <Geographies  geography={ WorldMapData }>
-				      {(geographies, projection) => geographies.map(geography => (
+				      {(geographies, projection) => geographies.map((geography, i) => (
 				        <Geography 
 				        	data-tip={geography.properties.NAME}
-				        	key={ geography.id } 
+				        	key={ i } 
 				        	geography={ geography } 
 				        	projection={ projection } 
-				        	onMouseMove={this.handleMove}
 				        	style={{
 			                    default: {			   
 			                      fill: "#ECEFF1",

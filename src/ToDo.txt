@@ -1,9 +1,4 @@
-
-show country name on homepage when hovering
-
-remove one of the bootstrap packages
-
-alter the zoom based on country size
+phone compatible
 
 ### Notes ###
 myanmar, singapore no cities

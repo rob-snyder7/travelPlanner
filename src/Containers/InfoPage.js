@@ -14,15 +14,15 @@ const InfoPage = ({country, onBack}) => {
 
 	numbToDisplay.forEach(function(element) {
 		if (AllAttractions.hasOwnProperty(country)){
-			attractions.push(<div className='f2-ns black  pb2'> {AllAttractions[country][element]} </div>)
-			attractions.push(<img className='img-responsive mb4' src={AllAttractionsImages[country][element]} />)			
+			attractions.push(<div key={element + 'attractions'} className='f2-ns black  pb2'> {AllAttractions[country][element]} </div>)
+			attractions.push(<img alt={country} key={element} className='img-responsive mb4' src={AllAttractionsImages[country][element]} />)			
 		}
 	})
 
 	numbToDisplay.forEach(function(element) {
 		if (AllCities.hasOwnProperty(country)){
-			cities.push(<div className='f2-ns black  pb2'> {AllCities[country][element]} </div>)
-			cities.push(<img className='img-responsive mb4' src={AllCitiesImages[country][element]} />)
+			cities.push(<div key={element + 'cities'} className='f2-ns black  pb2'> {AllCities[country][element]} </div>)
+			cities.push(<img alt={country} key={element} className='img-responsive mb4' src={AllCitiesImages[country][element]} />)
 		}
 	})
 

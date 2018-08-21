@@ -4,7 +4,6 @@
   "private": true,
   "homepage": "https://rksnyder7.github.io/travelPlanner",
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "gh-pages": "^1.2.0",
     "google-map-react": "^1.0.6",
     "react": "^16.4.1",

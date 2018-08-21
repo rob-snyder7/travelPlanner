@@ -15,16 +15,18 @@ class GoogleMap extends Component {
 	}
 
 
-
 	render() {
+
+	const bigCountries = ['United States', 'Canada', 'Brazil', 'Argentina', 'Australia', 'China']
+	    
 	    return (
 	    	
 	      <div style={{ height: '37vh', width: '100%' }}>
-
+	      {console.log(this.props.country)}
 	        <GoogleMapReact
 	          bootstrapURLKeys={{ key: 'AIzaSyCkNvM32n5Xu-xZUwdtniP1Mq2a4JvzvOQ' }}
 	          defaultCenter={this.state.center}
-	          defaultZoom={5}
+	          defaultZoom={bigCountries.includes(this.props.country) ? 2 : 5}
 	        >
 	        </GoogleMapReact>
 	      </div>

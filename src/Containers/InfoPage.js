@@ -3,7 +3,7 @@ import { AllAttractions, AllAttractionsImages, AllCities, AllCitiesImages } from
 import ScrollBar from 'react-perfect-scrollbar';
 import GoogleMap from '../Components/GoogleMap';
 import TravelCosts from '../Components/TravelCosts';
-
+import MobileNavbar from '../Components/MobileNavbar';
 
 
 const InfoPage = ({country, onBack}) => {
@@ -31,13 +31,14 @@ const InfoPage = ({country, onBack}) => {
 	return (
 
 		<div className='vh-100'>
+			<MobileNavbar onBack={onBack} country={country} />
 			<div style={{ height: '95vh'}}>
-				<div className='bg-light-blue'>
-					<p style={{fontSize: '7rem'}} className="black b f1 tc db mb3 mb4-ns bb bw2" title="Home">{country}</p>
+				<div className='countryTitle bg-light-blue'>
+					<p  className="f-headline-ns f1 black b tc db mb3 mb4-ns bb bw2" title="Home">{country}</p>
 				</div>
 					<div className="container">
 						<div className="row">
-							<div className="col-sm-4" style={{ height: '76vh'}}>
+							<div className="col-sm-4 col-xs-12 mainCol">
 									<p className='titles black b'>Attractions</p>
 							<ScrollBar>
 								{attractions}
@@ -45,20 +46,20 @@ const InfoPage = ({country, onBack}) => {
 							</div>
 							
 							
-							<div className="col-sm-4" style={{ height: '76vh'}}>
+							<div className="col-sm-4 col-xs-12 mainCol" >
 								<p className='titles black b'>Cities</p>
 							<ScrollBar>
 								{cities}
 							</ScrollBar>		
 							</div>
-							<div className="col-sm-4">
+							<div className="col-sm-4 col-xs-12">
 								<TravelCosts country={country}/>
 								<GoogleMap country={country}/>
 							</div>
 						</div>
 					</div>
 			</div>
-				<div className='pt3'>
+				<div className='pt3' id='footer'>
 					<button onClick={onBack}>Back</button>
 				</div>
 		</div>

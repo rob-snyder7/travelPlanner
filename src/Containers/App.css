@@ -14,6 +14,45 @@
 }
 
 .titles {
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
 
+.countryMob {
+	font-size: 5rem;
+	padding-top: 1rem;
+}
+
+@media (max-width: 30em) {
+	.titles {
+		font-size: 2rem;
+	}
+	.countryMob {
+	font-size: 3rem;
+	padding-top: 2vh;
+	}
+}
+
+
+@media (min-width: 48em) {
+	.mainCol {
+		height: 76vh;
+	}
+	.navDisplay {
+		display: none;
+	}
+}
+
+@media (max-width: 48em) {
+	.countryTitle {
+		display: none;
+	}
+}
+
+.navbar {
+	background-color: #96CCFF !important;
+}
+
+/*#footer {
+	bottom: 10;
+	width: 100%;
+}*/

@@ -43,9 +43,7 @@ const InfoPage = ({country, onBack}) => {
 							<ScrollBar>
 								{attractions}
 							</ScrollBar>
-							</div>
-							
-							
+							</div>						
 							<div className="col-sm-4 col-xs-12 mainCol" >
 								<p className='titles black b'>Cities</p>
 							<ScrollBar>

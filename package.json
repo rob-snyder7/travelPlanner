@@ -5,14 +5,14 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gh-pages": "^1.2.0",
-    "google-map-react": "^1.0.6",
-    "react": "^16.4.1",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.4.2",
-    "react-perfect-scrollbar": "^1.2.0",
+    "google-map-react": "^1.1.7",
+    "react": "^16.13.1",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.13.1",
+    "react-perfect-scrollbar": "^1.5.8",
     "react-scripts": "1.1.4",
     "react-simple-maps": "^0.12.1",
-    "react-tooltip": "^3.6.1",
+    "react-tooltip": "^3.11.6",
     "tachyons": "^4.12.0"
   },
   "scripts": {

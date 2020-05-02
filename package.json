@@ -2,7 +2,7 @@
   "name": "travelplanner",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rksnyder7.github.io/travelPlanner",
+  // "homepage": "https://rksnyder7.github.io/travelPlanner",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "google-map-react": "^1.0.6",

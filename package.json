@@ -12,7 +12,8 @@
     "react-perfect-scrollbar": "^1.2.0",
     "react-scripts": "1.1.4",
     "react-simple-maps": "^0.12.1",
-    "react-tooltip": "^3.6.1"
+    "react-tooltip": "^3.6.1",
+    "tachyons": "^4.12.0"
   },
   "scripts": {
     "start": "set PORT=3001 && react-scripts start",
@@ -23,6 +24,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "tachyons": "^4.10.0"
+    "tachyons": "^4.12.0"
   }
 }

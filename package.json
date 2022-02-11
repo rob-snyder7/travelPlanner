@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://rob-snyder7.github.io/travelPlanner",
   "dependencies": {
-    "ajv": "^6.12.2",
+    "ajv": "^6.12.3",
     "bootstrap": "^3.3.7",
     "gh-pages": "^1.2.0",
     "google-map-react": "^1.1.7",
